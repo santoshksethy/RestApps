@@ -27,5 +27,5 @@ public class BaseController
 		Student student = new Student(100,"Roshan","java",95.0);
 		return new ResponseEntity<Student>(student,HttpStatus.OK);
 	}
-
+	//ready for xml configurations
 }
