@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class BaseController
 {
 	@GetMapping("/get")
-	public ResponseEntity<String> get(@RequestParam("cno") Integer no,@RequestParam(required = false) String name)
+	public ResponseEntity<String> get(@RequestParam("cno") Integer no,@RequestParam(required = false,defaultValue = "Raja") String name)
 	{
 		return new ResponseEntity<String>("Customer id: "+no+"\nCustomer name: "+name,HttpStatus.OK);
 	}
